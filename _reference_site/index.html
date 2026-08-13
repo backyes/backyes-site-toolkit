@@ -1,0 +1,1209 @@
+<!DOCTYPE html><html lang="en-US"><head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZBXY60BLWE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZBXY60BLWE');
+    </script>
+    <meta name="google-adsense-account" content="ca-pub-8607681845167073">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vikas Goyal - Agentic AI, Startups, Software Architecture, and Career Growth</title>
+        <meta name="description" content="Explore practical insights on agentic AI, software architecture, startups, technology leadership, and career growth.">
+        <meta name="keywords" content="Vikas Goyal, agentic AI, startups, software architecture, technology leadership, career growth, multi-agent systems, AI architecture, generative AI">
+        <meta name="author" content="Vikas Goyal">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://vikasgoyal.github.io/">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta property="og:title" content="Vikas Goyal - Agentic AI, Startups, Software Architecture, and Career Growth">
+        <meta property="og:description" content="Explore practical insights on agentic AI, software architecture, startups, technology leadership, and career growth.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://vikasgoyal.github.io/">
+        <meta property="og:site_name" content="Vikas Goyal">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Vikas Goyal - Agentic AI, Startups, Software Architecture, and Career Growth">
+        <meta name="twitter:description" content="Explore practical insights on agentic AI, software architecture, startups, technology leadership, and career growth.">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Vikas Goyal",
+            "url": "https://vikasgoyal.github.io/",
+            "sameAs": [
+                "https://www.linkedin.com/in/vikasgoyal/"
+            ],
+            "jobTitle": "Technology Leader",
+            "description": "Technology leader writing about agentic AI, software architecture, startups, and career growth"
+        }
+        </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --ink: #111111;
+            --ink-soft: #4d4d4d;
+            --paper: #f6f3ec;
+            --surface: rgba(255, 255, 255, 0.86);
+            --surface-strong: #ffffff;
+            --line: rgba(17, 17, 17, 0.12);
+            --green: #0f5d44;
+            --green-deep: #0a3f30;
+            --gold: #bf8b2c;
+            --blue: #163e7a;
+            --shadow: 0 24px 60px rgba(17, 17, 17, 0.10);
+            --radius-lg: 28px;
+            --radius-md: 18px;
+            --radius-sm: 12px;
+            --content-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Manrope', 'Segoe UI', sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(15, 93, 68, 0.12), transparent 28%),
+                radial-gradient(circle at top right, rgba(191, 139, 44, 0.14), transparent 24%),
+                linear-gradient(180deg, #fcfaf6 0%, var(--paper) 42%, #ffffff 100%);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .page-shell {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 24px 20px 72px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .brand-name {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .brand-name .icon-link {
+            width: 36px;
+            height: 36px;
+            color: var(--blue);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .brand-name .icon-link:hover,
+        .brand-name .icon-link:focus {
+            color: var(--green);
+        }
+
+        .brand-tagline {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+        }
+
+        .topnav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .topnav a {
+            padding: 10px 14px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            background: rgba(255, 255, 255, 0.55);
+            transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .topnav a:hover,
+        .topnav a:focus {
+            color: var(--ink);
+            border-color: rgba(17, 17, 17, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .topnav a.nav-accent {
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+            border-color: transparent;
+            box-shadow: 0 12px 26px rgba(22, 62, 122, 0.18);
+        }
+
+        .topnav a.nav-accent:hover,
+        .topnav a.nav-accent:focus {
+            color: #ffffff;
+            border-color: transparent;
+        }
+
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            color: var(--ink-soft);
+            background: rgba(255, 255, 255, 0.55);
+            transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .icon-link:hover,
+        .icon-link:focus {
+            color: var(--ink);
+            border-color: rgba(17, 17, 17, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .icon-link svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.85fr);
+            gap: 24px;
+            align-items: stretch;
+            margin-bottom: 26px;
+        }
+
+        .hero-panel,
+        .hero-aside,
+        .section-card,
+        .path-card,
+        .signal-card,
+        .article-card,
+        .latest-card,
+        .footer-card {
+            background: var(--surface);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-panel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 36px;
+            padding: 44px;
+        }
+
+        .hero-panel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(15, 93, 68, 0.10), transparent 45%),
+                linear-gradient(315deg, rgba(191, 139, 44, 0.12), transparent 40%);
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(17, 17, 17, 0.05);
+            color: var(--green-deep);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            position: relative;
+            margin: 0 0 18px;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: clamp(2.3rem, 4.8vw, 4.35rem);
+            line-height: 1.08;
+            letter-spacing: -0.04em;
+            max-width: 12ch;
+        }
+
+        .hero-copy {
+            position: relative;
+            max-width: 63ch;
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: var(--ink-soft);
+            margin-bottom: 28px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 28px;
+            position: relative;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 48px;
+            padding: 0 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .button-primary {
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--green) 0%, var(--green-deep) 100%);
+            box-shadow: 0 14px 30px rgba(15, 93, 68, 0.25);
+        }
+
+        .button-secondary {
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid var(--line);
+        }
+
+        .button:hover,
+        .button:focus {
+            transform: translateY(-2px);
+        }
+
+        .hero-metrics {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .metric {
+            padding: 16px 18px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(17, 17, 17, 0.08);
+        }
+
+        .metric-label {
+            display: block;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-soft);
+            margin-bottom: 8px;
+        }
+
+        .metric strong {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .hero-aside {
+            border-radius: 30px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .aside-kicker {
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--green-deep);
+            margin: 0;
+        }
+
+        .aside-title {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.55rem;
+            line-height: 1.25;
+            margin: 0;
+        }
+
+        .aside-text {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.75;
+        }
+
+        .aside-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 14px;
+        }
+
+        .aside-list li {
+            padding: 16px;
+            border-radius: var(--radius-md);
+            background: rgba(17, 17, 17, 0.03);
+            border: 1px solid rgba(17, 17, 17, 0.06);
+        }
+
+        .aside-list span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .signal-grid,
+        .featured-grid,
+        .paths-grid,
+        .latest-grid,
+        .footer-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .signal-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            margin-bottom: 26px;
+        }
+
+        .signal-card {
+            border-radius: 22px;
+            padding: 20px;
+        }
+
+        .signal-card strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .signal-card p {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.65;
+            font-size: 0.95rem;
+        }
+
+        .section-card {
+            border-radius: 32px;
+            padding: 30px;
+            margin-bottom: 26px;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .section-heading h2 {
+            margin: 0;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: clamp(1.7rem, 2.2vw, 2.35rem);
+            letter-spacing: -0.03em;
+        }
+
+        .section-heading p {
+            margin: 0;
+            max-width: 55ch;
+            color: var(--ink-soft);
+            line-height: 1.7;
+        }
+
+        .featured-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .article-card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            border-radius: 24px;
+            padding: 24px;
+            min-height: 100%;
+        }
+
+        .article-tag {
+            display: inline-flex;
+            width: fit-content;
+            padding: 7px 12px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            background: rgba(15, 93, 68, 0.10);
+            color: var(--green-deep);
+        }
+
+        .article-card h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            line-height: 1.35;
+        }
+
+        .article-card p {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.7;
+        }
+
+        .article-link {
+            margin-top: auto;
+            font-weight: 800;
+            color: var(--blue);
+        }
+
+        .paths-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .path-card {
+            border-radius: 22px;
+            padding: 22px;
+        }
+
+        .path-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+        }
+
+        .path-card p {
+            margin: 0 0 16px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .path-links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .path-links a {
+            color: var(--blue);
+            font-weight: 700;
+        }
+
+        .two-up {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+            gap: 20px;
+            margin-bottom: 26px;
+        }
+
+        .latest-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .latest-card {
+            border-radius: 20px;
+            padding: 20px;
+            min-height: 220px;
+        }
+
+        .latest-card time {
+            display: block;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-soft);
+            margin-bottom: 10px;
+        }
+
+        .latest-card h3 {
+            margin: 0 0 12px;
+            font-size: 1.08rem;
+            line-height: 1.45;
+        }
+
+        .latest-card p {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            font-size: 0.94rem;
+        }
+
+        .latest-status {
+            margin: 0;
+            color: var(--ink-soft);
+        }
+
+        .newsletter-panel {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+            gap: 24px;
+            align-items: center;
+            padding: 34px;
+            background:
+                linear-gradient(135deg, rgba(22, 62, 122, 0.08), rgba(15, 93, 68, 0.12)),
+                rgba(255, 255, 255, 0.82);
+        }
+
+        .newsletter-copy {
+            display: grid;
+            gap: 14px;
+        }
+
+        .newsletter-copy h2 {
+            margin: 0;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: clamp(1.85rem, 2.4vw, 2.6rem);
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+        }
+
+        .newsletter-copy p {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.8;
+            max-width: 52ch;
+        }
+
+        .newsletter-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .newsletter-meta span {
+            display: inline-flex;
+            align-items: center;
+            padding: 9px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(17, 17, 17, 0.08);
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--green-deep);
+        }
+
+        .newsletter-embed {
+            padding: 18px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(17, 17, 17, 0.08);
+            box-shadow: 0 18px 36px rgba(17, 17, 17, 0.08);
+        }
+
+        .newsletter-embed iframe {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            border: 1px solid #eee;
+            background: #ffffff;
+            border-radius: 18px;
+        }
+
+        .newsletter-embed p {
+            margin: 14px 6px 0;
+            color: var(--ink-soft);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .newsletter-embed a {
+            color: var(--blue);
+            font-weight: 700;
+        }
+
+        .footer-grid {
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        }
+
+        .footer-card {
+            border-radius: 26px;
+            padding: 24px;
+        }
+
+        .footer-card h2,
+        .footer-card h3 {
+            margin: 0 0 12px;
+        }
+
+        .footer-card p {
+            margin: 0;
+            color: var(--ink-soft);
+            line-height: 1.7;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .footer-links a {
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.7);
+            font-weight: 700;
+        }
+
+        .note {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1080px) {
+            .hero,
+            .two-up,
+            .footer-grid,
+            .newsletter-panel {
+                grid-template-columns: 1fr;
+            }
+
+            .signal-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .featured-grid,
+            .paths-grid,
+            .latest-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 720px) {
+            .page-shell {
+                padding: 16px 14px 48px;
+            }
+
+            .topbar,
+            .section-heading {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero-panel,
+            .hero-aside,
+            .section-card,
+            .footer-card {
+                padding: 22px;
+            }
+
+            .newsletter-panel {
+                padding: 22px;
+            }
+
+            .hero-metrics,
+            .signal-grid,
+            .featured-grid,
+            .paths-grid,
+            .latest-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                max-width: none;
+            }
+        }
+    </style>
+<style id="subscribe-slidein-styles">.subscribe-slidein {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1200;
+  width: min(360px, calc(100vw - 28px));
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 22px 48px rgba(18, 18, 18, 0.18);
+  backdrop-filter: blur(10px);
+  transform: translateY(18px);
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.subscribe-slidein.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.subscribe-slidein-tag {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(23, 60, 115, 0.08);
+  color: #173c73;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.subscribe-slidein h2 {
+  margin: 12px 0 8px;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: #121212;
+}
+.subscribe-slidein p {
+  margin: 0;
+  color: #505050;
+  line-height: 1.65;
+}
+.subscribe-slidein-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+.subscribe-slidein-primary,
+.subscribe-slidein-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.subscribe-slidein-primary {
+  border: none;
+  background: linear-gradient(135deg, #173c73 0%, #0f5d44 100%);
+  color: #ffffff;
+  box-shadow: 0 12px 22px rgba(23, 60, 115, 0.20);
+}
+.subscribe-slidein-secondary {
+  border: 1px solid rgba(18, 18, 18, 0.10);
+  background: rgba(255, 255, 255, 0.82);
+  color: #173c73;
+}
+.subscribe-slidein-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(18, 18, 18, 0.06);
+  color: #505050;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.subscribe-slidein-close:hover,
+.subscribe-slidein-close:focus,
+.subscribe-slidein-primary:hover,
+.subscribe-slidein-primary:focus,
+.subscribe-slidein-secondary:hover,
+.subscribe-slidein-secondary:focus {
+  transform: translateY(-1px);
+}
+@media (max-width: 720px) {
+  .subscribe-slidein {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    width: auto;
+    border-radius: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .subscribe-slidein {
+    transition: none;
+  }
+}
+</style></head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-name">
+                    <span>Vikas Goyal</span>
+                    <a class="icon-link" href="https://www.linkedin.com/in/vikasgoyal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8 10H5V19H8V10ZM6.5 5.88A1.75 1.75 0 1 0 6.5 9.38A1.75 1.75 0 1 0 6.5 5.88ZM19 13.5C19 10.74 17.26 9 14.85 9C13.69 9 12.84 9.64 12.5 10.09V10H9.5V19H12.5V14C12.5 12.62 13.12 11.5 14.54 11.5C15.94 11.5 16 12.81 16 14.09V19H19V13.5Z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="brand-tagline">Notes for solutions architects, tech founders, and professionals building with AI.</div>
+            </div>
+            <nav class="topnav" aria-label="Primary">
+                <a class="nav-accent" href="./industries/index.html">Industry AI</a>
+                <a href="./agentic/">Agentic AI</a>
+                <a href="./startups/">Startups</a>
+                <a href="./ecp/">Career Guidance</a>
+                <a class="nav-accent" href="#newsletter">Subscribe</a>
+            </nav>
+        </header>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-panel">
+                <div class="eyebrow">For Solutions Architects and Tech Founders</div>
+                <h1 id="hero-title">How to think clearly about agentic systems, startup choices, and technical leverage.</h1>
+                <p class="hero-copy">
+                    Use these essays and frameworks to sharpen architecture decisions, founder judgment, and career choices. The emphasis is practical: system design that holds up, startup thinking that survives contact with reality, and guidance that helps people compound skill over time.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#essential-reads">Read the architecture essentials</a>
+                    <a class="button button-secondary" href="#paths">Browse by problem type</a>
+                </div>
+                <div class="hero-metrics" aria-label="Topic signals">
+                    <div class="metric">
+                        <span class="metric-label">Solutions Architecture</span>
+                        <strong>Architectures, query patterns, and decision models for teams designing AI-enabled systems.</strong>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Tech Founding</span>
+                        <strong>Guidance on co-founders, funding, and early strategic choices that shape product and company trajectory.</strong>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Career Decisions</span>
+                        <strong>Career guidance for professionals and students building judgment, resilience, and long-term leverage.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="hero-aside" aria-label="How to use this site">
+                <p class="aside-kicker">Use This Page</p>
+                <h2 class="aside-title">Choose the lens that matches the problem in front of you.</h2>
+                <p class="aside-text">
+                    Start with the architecture section if you are designing systems. Go straight to the founder section if you are making company-building choices. Use the career section if the immediate question is capability, judgment, or trajectory.
+                </p>
+                <ul class="aside-list">
+                    <li>
+                        <span>For solutions architects</span>
+                        Begin with the architecture and query-design pieces to frame system boundaries, orchestration, and failure modes.
+                    </li>
+                    <li>
+                        <span>For tech founders</span>
+                        Move quickly from abstract startup advice to concrete articles on co-founders, first meetings, and funding decisions.
+                    </li>
+                    <li>
+                        <span>For career builders</span>
+                        Use the career section to sharpen mindset, adaptability, and long-term judgment.
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="signal-grid" aria-label="What this site covers">
+            <article class="signal-card">
+                <strong>AI system design, without hand-waving</strong>
+                <p>Concepts, architectures, and reasoning models written to help architects make clearer technical decisions.</p>
+            </article>
+            <article class="signal-card">
+                <strong>Founder judgment</strong>
+                <p>Guidance on co-founders, funding, and the strategic tradeoffs that matter when product and company are both still forming.</p>
+            </article>
+            <article class="signal-card">
+                <strong>Career leverage</strong>
+                <p>Advice for professionals and students on capability building, resilience, and making higher-quality career moves.</p>
+            </article>
+            <article class="signal-card">
+                <strong>Leadership and systems thinking</strong>
+                <p>Essays on software design, organizational behavior, and how strong teams reduce cognitive load.</p>
+            </article>
+        </section>
+
+        <section class="section-card" id="essential-reads" aria-labelledby="essential-reads-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="essential-reads-title">Architecture and AI Essentials</h2>
+                </div>
+                <p>Start here if you are a solutions architect, technical lead, or founder trying to reason about how AI systems should actually be designed and constrained.</p>
+            </div>
+            <div class="featured-grid">
+                <article class="article-card">
+                    <div class="article-tag">Flagship</div>
+                    <h3>What is Agentic Thinking?</h3>
+                    <p>A practical framing for understanding how AI systems move from prompt-response behavior toward purposeful action and delegated work.</p>
+                    <a class="article-link" href="./genai/agenticthinking.html">Read the essay</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">Architecture</div>
+                    <h3>Agentic Systems - Reference Architecture</h3>
+                    <p>A system-level view of how orchestration, tools, memory, and control loops fit together when you want production-grade agentic behavior.</p>
+                    <a class="article-link" href="./agentic/refarchagentic.html">Read the architecture piece</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">Governance</div>
+                    <h3>A Practical Taxonomy for Agentic AI Systems</h3>
+                    <p>A control-flow taxonomy for classifying agentic systems by what decides the next action and how much governance the system needs.</p>
+                    <a class="article-link" href="./agentic/agenticai-types.html">Read the taxonomy</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">Design</div>
+                    <h3>Designing a Robust Chatbot: Handling a Variety of Query Types</h3>
+                    <p>A concrete design-oriented piece on handling different request patterns, an area solutions architects usually underestimate at first.</p>
+                    <a class="article-link" href="./agentic/chatbotquerytypes.html">Read the design guide</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">Evaluation</div>
+                    <h3>Pre-Build Evals for AI Agents</h3>
+                    <p>A practical article on defining behaviors, scenarios, failure modes, rubrics, and acceptance criteria before building an AI agent.</p>
+                    <a class="article-link" href="./agentic/prebuildevals.html">Read the evaluation article</a>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">Companion UX</div>
+                    <h3>Designing Companion Conversational Interfaces</h3>
+                    <p>A practical guide to designing Teams and Copilot companions that answer one thing well instead of shrinking dashboards into chat.</p>
+                    <a class="article-link" href="./agentic/design/conversational_interfaces.html">Read the conversational UX article</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="two-up" aria-label="Startup and career highlights">
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <h2>Startup Highlights</h2>
+                    </div>
+                    <p>Founder-oriented content belongs in the main flow because early strategic mistakes are expensive and usually hard to reverse.</p>
+                </div>
+                <div class="featured-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+                    <article class="article-card">
+                        <div class="article-tag">Founders</div>
+                        <h3>What to Look for in Co-founders</h3>
+                        <p>A grounded view of the signals that matter when choosing the people you will build with under pressure.</p>
+                        <a class="article-link" href="./blog/2025/12/cofounder-intention-intuition-intelligence.html">Read the co-founder guide</a>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-tag">Fundraising</div>
+                        <h3>Startup Funding Stages</h3>
+                        <p>A clearer mental model for how financing stages map to company maturity, expectations, and founder behavior.</p>
+                        <a class="article-link" href="./startups/startupfundingstages.html">Read the funding overview</a>
+                    </article>
+                </div>
+                <div class="path-links" style="margin-top: 18px;">
+                    <a href="./startups/firstmeetingstartups.html">What matters in first startup meetings</a>
+                    <a href="./startups/youngfounders.html">Notes for younger founders building credibility fast</a>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-heading">
+                    <div>
+                        <h2>Career Guidance</h2>
+                    </div>
+                    <p>This section stays prominent because career judgment compounds, especially for early professionals and students choosing where to invest effort.</p>
+                </div>
+                <div class="path-links">
+                    <a href="./general/developermindset.html">The Evolution of a Software Developer's Mindset</a>
+                    <a href="./ecp/software-engineering.html">The Software Engineer Is Changing. Engineering Isn't.</a>
+                    <a href="./general/futureofwork.html">The Importance of Adaptability and Resilience in the Future of Work</a>
+                    <a href="./general/awardwinningfailures.html">Award-Winning Failures: Learn to spot low-value work early</a>
+                    <a href="./general/hownottochange.html">Why Change Management Often Fails - And How to Get It Right</a>
+                    <a href="./general/smarthumans.html">Intelligent Agents Need Smart Humans</a>
+                    <a href="./general/modelsandcreativity.html">Mental Models and Creativity in Leadership</a>
+                    <a href="./ecp/index.html">Browse the Early Career Professionals and Students section</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card" id="paths" aria-labelledby="paths-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="paths-title">Browse by What You Need</h2>
+                </div>
+                <p>Organized by problem type so solutions architects, founders, and professionals can get to the right material without scanning the whole site.</p>
+            </div>
+            <div class="paths-grid">
+                <article class="path-card">
+                    <h3>I am designing an AI-enabled system</h3>
+                    <p>Start with concepts, architectures, and query-design patterns before jumping into implementation detail.</p>
+                    <div class="path-links">
+                        <a href="./agentic/">Browse Agentic AI</a>
+                        <a href="./genai/agenticsystems.html">What are Agentic Systems?</a>
+                    </div>
+                </article>
+                <article class="path-card">
+                    <h3>I am acting as a solutions architect</h3>
+                    <p>Use the architecture and software design pieces to reduce ambiguity, cognitive load, and brittle system choices.</p>
+                    <div class="path-links">
+                        <a href="./agentic/refarchagentic.html">Agentic Systems - Reference Architecture</a>
+                        <a href="./agentic/agenticai-types.html">A Practical Taxonomy for Agentic AI Systems</a>
+                        <a href="./agentic/prebuildevals.html">Pre-Build Evals for AI Agents</a>
+                        <a href="./agentic/chatbotquerytypes.html">Handling a variety of query types</a>
+                    </div>
+                </article>
+                <article class="path-card">
+                    <h3>I am building or joining a tech startup</h3>
+                    <p>Go directly to founder selection, funding stages, and early operating choices that get expensive when made badly.</p>
+                    <div class="path-links">
+                        <a href="./startups/">Browse Startups</a>
+                        <a href="./startups/firstmeetingstartups.html">What matters in first startup meetings</a>
+                    </div>
+                </article>
+                <article class="path-card">
+                    <h3>I am shaping my career</h3>
+                    <p>Focus on mindset, adaptability, and what creates long-term leverage for students and early professionals.</p>
+                    <div class="path-links">
+                        <a href="./ecp/">Browse Career Guidance</a>
+                        <a href="./general/smarthumans.html">Why smart humans still matter</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-card" aria-labelledby="latest-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="latest-title">Latest Writing</h2>
+                </div>
+                <p>Recent posts stay in the main flow, but the page still prioritizes durable architecture, startup, and career guidance over recency.</p>
+            </div>
+            <div id="latest-posts-v2" class="latest-grid"><article class="latest-card"><time datetime="2026-03-13">Mar 13, 2026 | Career</time><h3><a href="/blog/2026/03/award-winning-failures-projects-that-should-not-exist.html">Award-Winning Failures: When Recognition Hides Weak Value</a></h3><p>Career guidance and judgment for professionals navigating growth, change, and leverage.</p></article><article class="latest-card"><time datetime="2026-01-02">Jan 2, 2026 | Agentic AI</time><h3><a href="/blog/2026/01/agentic-advantage-new-leverage.html">The Agentic Advantage: A New Form of Leverage</a></h3><p>A practical take on agentic AI, systems design, and the architectural decisions behind it.</p></article><article class="latest-card"><time datetime="2025-12-28">Dec 28, 2025 | Startups</time><h3><a href="/blog/2025/12/cofounder-intention-intuition-intelligence.html">What to Look for in Co-founders - Intention, Intuition or Intelligence?</a></h3><p>Startup lessons on founders, funding, and choices that compound early.</p></article></div>
+        </section>
+
+        <section class="section-card newsletter-panel" id="newsletter" aria-labelledby="newsletter-title">
+            <div class="newsletter-copy">
+                <div class="eyebrow">Newsletter</div>
+                <h2 id="newsletter-title">Get new essays on agentic AI, startups, and career judgment in your inbox.</h2>
+                <p>
+                    Subscribe for practical writing on AI system design, founder decisions, software architecture, and the career choices that compound over time.
+                </p>
+                <div class="newsletter-meta" aria-label="Newsletter topics">
+                    <span>Agentic AI</span>
+                    <span>Startup judgment</span>
+                    <span>Career leverage</span>
+                </div>
+            </div>
+            <div class="newsletter-embed">
+                <iframe src="https://aistartupscareer.substack.com/embed" width="480" height="150" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" title="Subscribe to the AI Startups Career newsletter" loading="lazy"></iframe>
+                <p>
+                    Prefer opening it directly? <a href="https://aistartupscareer.substack.com/" target="_blank" rel="noopener noreferrer">Visit the newsletter on Substack</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="footer-grid" aria-label="About and site notes">
+            <article class="footer-card">
+                <h2>What You Will Find Here</h2>
+                <p>
+                    This collection focuses on AI systems, software architecture, startup decision-making, and career growth. The through-line is practical judgment: making tradeoffs explicit, reducing confusion, and helping people focus on decisions that matter.
+                </p>
+                <div class="footer-links">
+                    <a href="./blog/">Explore the blog</a>
+                    <a href="#newsletter">Subscribe to the newsletter</a>
+                    <a href="https://www.linkedin.com/in/vikasgoyal/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                </div>
+            </article>
+            <article class="footer-card">
+                <h3>Site Notes</h3>
+                <p class="note">This site has been co-created with GitHub Copilot and other LLMs.</p>
+                <p class="note" style="margin-top: 14px;">These views are mine alone and not those of my employer.</p>
+            </article>
+        </section>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const target = document.getElementById('latest-posts-v2');
+        if (!target) {
+            return;
+        }
+
+        const useRelativePaths = window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const baseUrl = useRelativePaths ? '.' : 'https://vikasgoyal.github.io';
+
+        function normalizeUrl(url) {
+            if (useRelativePaths && url && url.charAt(0) === '/') {
+                return '.' + url;
+            }
+            return url;
+        }
+
+        function formatPostDate(dateString) {
+            const [year, month, day] = dateString.split('-').map(Number);
+            return new Date(year, month - 1, day).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+            });
+        }
+
+        function summarizeCategory(post) {
+            const category = (post.category || '').toLowerCase();
+            if (category.includes('career')) {
+                return 'Career guidance and judgment for professionals navigating growth, change, and leverage.';
+            }
+            if (category.includes('startup')) {
+                return 'Startup lessons on founders, funding, and choices that compound early.';
+            }
+            if (category.includes('agentic')) {
+                return 'A practical take on agentic AI, systems design, and the architectural decisions behind it.';
+            }
+            return 'A recent essay from the site on technology, leadership, and better decision-making.';
+        }
+
+        fetch(baseUrl + '/latest-posts.json?v=20260313')
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error('Failed to load latest posts');
+                }
+                return response.json();
+            })
+            .then(function (data) {
+                const sortedPosts = data.posts.sort(function (left, right) {
+                    return new Date(right.date) - new Date(left.date);
+                });
+                const latestThree = sortedPosts.slice(0, 3);
+
+                target.innerHTML = latestThree.map(function (post) {
+                    return [
+                        '<article class="latest-card">',
+                        '<time datetime="' + post.date + '">' + formatPostDate(post.date) + ' | ' + post.category + '</time>',
+                        '<h3><a href="' + normalizeUrl(post.url) + '">' + post.title + '</a></h3>',
+                        '<p>' + summarizeCategory(post) + '</p>',
+                        '</article>'
+                    ].join('');
+                }).join('');
+            })
+            .catch(function () {
+                target.innerHTML = '<p class="latest-status">Unable to load latest posts right now.</p>';
+            });
+    });
+    </script>
+    <script src="/headerfooter.js"></script>
+
+<aside class="subscribe-slidein" hidden="" aria-hidden="true" aria-label="Newsletter subscription prompt"><button class="subscribe-slidein-close" type="button" aria-label="Dismiss subscribe prompt">×</button><span class="subscribe-slidein-tag">Newsletter</span><h2>Get new essays in your inbox.</h2><p>Practical writing on agentic AI, startups, software architecture, and career judgment.</p><div class="subscribe-slidein-actions">  <a class="subscribe-slidein-primary" data-subscribe-link="" href="https://aistartupscareer.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a>  <button class="subscribe-slidein-secondary" type="button" data-dismiss-prompt="">Not now</button></div></aside></body></html>
