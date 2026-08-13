@@ -62,6 +62,7 @@ RSYNC_FILTER=(
 # ------------------------------------------------------------------------------
 PROJECTS=(
   "umdk_research|umdk|analysis/index.html|🔬|UMDK 深度分析文档索引|3 份主报告 + 16 篇 CAM Agent 深挖 + 10 篇 URPC 专题文档 · CAM v2 (8章) / URPC (11篇) / CAM v1 · 21K+ 分析行数|chip|p0"
+  "amd-latest-tech-2026|amd-latest-tech-2026|index.html|🔴|AMD 全栈 AI 基础设施调研|CDNA 5 GPU · Helios 机架 · UALink 总线 · ROCm.ai · EPYC Venice · Gorgon Halo · 16 章 50+ 引用|chip|p0"
   "vllm_research/vllm_analysis|vllm_research/vllm_analysis|index.html|📘|vLLM 架构统一分析|12 章统一分析 (第一性原理 / 热路径 / KV-Cache 4 层 / 分布式 / Ascend Overlay / Perf Handbook) · 合并 spine+L4 agent+源码+社区 90d pulse · 每节 source 溯源锚点|inference|p0"
   "pd-separation-kvcache-research|pd-separation|report.html|🔀|P/D 分离 KVCache 流通|vLLM / SGLang / LMCache / Mooncake / Dynamo 五大框架的 Prefill-Decode 分离 + KV Cache 路由内部实现源码级拆解 · BootstrapQueue→WaitingQueue→InflightQueue 全生命周期|inference|p0"
   "mlsys2026_report|mlsys2026|index.html|🎓|MLSys 2026 深度综合|Keynote + 19 篇论文逐篇深度解读后的跨论文战略综合 · 6 条主轴: 同步税 / 存储层级重定义 / P2P 转移 / Superchip 冲击 / 批判性转向 / 训练路线分叉|mixed|p0"
