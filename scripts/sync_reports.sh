@@ -105,8 +105,29 @@ targeted() {
   return 1
 }
 
+# 检测站点仓库中的 gitlink（mode 160000 = 子模块引用, 无 .gitmodules 则 Pages 构建 fatal）
+check_gitlinks() {
+  local found=0
+  while IFS= read -r line; do
+    [ -z "$line" ] && continue
+    local path=$(echo "$line" | awk '{print $4}')
+    warn "检测到 gitlink(子模块引用): $path"
+    warn "  → 若无 .gitmodules 定义, GitHub Pages 构建会 fatal:"
+    warn "     fatal: No url found for submodule path '$path' in .gitmodules"
+    warn "  → 修复: git rm --cached $path && rm -rf $path/.git && git add $path"
+    found=1
+  done < <(git ls-tree HEAD | grep '^160000')
+  return $found
+}
+
 # ======================= 主流程 =======================
 [ -d "$REPO/.git" ] || { echo "ERROR: $REPO 不是 git 仓库, 请先 clone backyes.github.io"; exit 1; }
+
+# 预检: 检测站点仓库中的 gitlink（防止 Pages 构建 fatal）
+log "预检: 扫描 gitlink(子模块引用) ..."
+if check_gitlinks; then
+  ok "预检通过: 未发现 gitlink"
+fi
 
 cd "$REPO"
 export GIT_AUTHOR_NAME="backyes"; export GIT_AUTHOR_EMAIL="backyes@gmail.com"

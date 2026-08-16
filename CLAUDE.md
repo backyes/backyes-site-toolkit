@@ -144,6 +144,22 @@ rsync -a --delete --delete-excluded \
 - **解决**: 使用 `article.html#section-anchor` 直接定位到具体章节
 - **教训**: **引用链接应直接指向目标内容**, 不通过文末参考文献中转
 
+### 4.17 嵌套 .git 目录导致 Pages 构建全部失败（严重）
+- **问题**: `sync_reports.sh` 报告"无变更"但站点不更新, 所有 GitHub Pages 构建失败 (duration=0, errored)
+- **根因**: `spacex_space_economy_research/` 内含独立 `.git/` 目录, 被 git 记录为 **gitlink（子模块引用, mode 160000）**, 但仓库缺少 `.gitmodules` 文件定义其远程 URL
+- **错误信息**: `fatal: No url found for submodule path 'spacex_space_economy_research' in .gitmodules`
+- **影响**: GitHub Actions checkout 子模块时 fatal error, 连续 5 次构建全部失败
+- **修复**:
+  1. `git rm --cached <目录>` 移除 gitlink 引用
+  2. 删除/移走目录内的 `.git/` 子目录
+  3. `git add <目录>` 重新作为普通文件跟踪
+  4. 将 `*.bak` / `*.bak_dark` 等备份模式加入 `.gitignore`
+- **教训**:
+  - **任何包含 `.git/` 的子目录都不能直接 `git add`**, 否则会被记录为 gitlink
+  - 排查"站点不更新"时, 除检查 rsync 和 git status, **必须检查 GitHub Pages 构建状态**: `gh api repos/{owner}/{repo}/pages/builds/latest`
+  - 构建 duration=0 + errored 通常意味着 Actions 调度失败或 checkout 阶段 fatal error
+  - 用 `git ls-tree HEAD <目录>` 可检查是否被记录为 gitlink（mode 160000）
+
 ## 五、写文章经验
 
 ### 数据驱动型写作
@@ -222,6 +238,45 @@ git add -A && git commit -m "refresh: update homepage" && git push origin main
 ```
 
 ## 七、任务经验记录
+
+### 2026-08-16: 修复 GitHub Pages 构建全部失败（gitlink 子模块问题）
+
+#### 任务概述
+- **目标**: 站点"更新"后未生效, 排查根因并修复
+- **产出**: 修复构建, 站点恢复正常 (HTTP 200)
+
+#### 排查过程
+1. `sync_reports.sh --dry-run` 显示 21 个项目全部 ~0 项变动 → 源文件无变更
+2. `git status` 仅 `spacex_space_economy_research` 显示 modified → 发现嵌套仓库
+3. `git diff HEAD origin/main` 为空 → 本地与远程一致, 不是 push 问题
+4. **关键步骤**: `gh api repos/backyes/backyes.github.io/pages/builds/latest` → 发现 Status=building, duration=0
+5. 查看最近 5 次构建: **全部 errored, duration=0**
+6. `gh run view <id> --log-failed` → 定位到 Checkout 步骤报错: `fatal: No url found for submodule path 'spacex_space_economy_research' in .gitmodules`
+7. `git ls-tree HEAD spacex_space_economy_research` → 确认为 `160000 commit`（gitlink）
+
+#### 根因
+`spacex_space_economy_research/` 内包含独立的 `.git/` 目录（嵌套仓库）, 被父仓库记录为 gitlink（子模块引用）, 但没有 `.gitmodules` 文件定义其 URL。GitHub Actions checkout 子模块时找不到 URL → fatal error → 构建失败。
+
+#### 修复
+```bash
+git rm --cached spacex_space_economy_research          # 移除 gitlink
+rm -rf spacex_space_economy_research/.git              # 删除嵌套 .git
+git add spacex_space_economy_research/                 # 重新作为普通文件跟踪
+echo "*.bak" >> .gitignore                             # 排除备份文件
+git add .gitignore && git commit && git push
+```
+
+#### 教训
+- **"sync 无变更"≠"站点最新"**: 必须检查 GitHub Pages 构建状态
+- **排查站点不更新的三板斧**: ① rsync dry-run ② git status/diff ③ `gh api .../pages/builds/latest`
+- **嵌套 .git 是定时炸弹**: 任何 `git add` 含 `.git/` 的子目录都会产生 gitlink, 必须提前排除
+- **gh api 是诊断利器**: `pages/builds/latest` 的 status + duration 能快速区分"构建中/构建失败/调度失败"
+
+#### 经验总结
+- **Pages 构建状态诊断流程**: `gh api builds/latest` → 看 status → 若 errored 则 `gh run view <action_id> --log-failed` → 定位具体 step
+- **duration=0 + errored** = 构建从未真正执行（调度或 checkout 阶段失败）, 不是代码逻辑问题
+
+---
 
 ### 2026-08-12: UMDK Survey by AI 统一首页重构
 
