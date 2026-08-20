@@ -81,7 +81,7 @@ PROJECTS=(
   "hbm_cxl_memory_research|hbm-cxl|report.html|💾|HBM/CXL/Memory|HBM CXL NAND 内存层级市场深度调研 · 三星/SK海力士/美光|storage|p1"
   "inference-community-2026|inference-community|report.html|🌐|vLLM vs SGLang|vLLM vs SGLang 推理引擎社区调研 · Benchmark / 架构演进 / PD Disagg / KV Cache 设计哲学|inference|p1"
   "DeepEP_research|deep-ep|index.html|⚙️|DeepEP 深度分析索引|源码级深度分析索引 · 主报告 + 三视角分报告 + 交叉讨论 + 专题深潜 · MoE 专家并行 AllToAll / NVLink+RDMA / Low-Latency / 性能基准|network|p0"
-  "deepgemm_research/docs|deepepv2|html/index.html|🔬|DeepGEMM & DeepEP Survey by AI (审核中)|47 篇深度分析报告（架构4篇 + 博客↔DeepGEMM 10篇 + 三向对比9篇 + DeepEP独立分析11篇 + 测试分析7篇 + 对称内存4篇 + V2弹性架构2篇）· 博客理论 ⇌ DeepEP源码 ⇌ DeepGEMM源码 · 核心发现：同步范式 Barrier→mbarrier FIFO / 通信模型 消息传递→Load-Store 对称内存直传|chip|p0"
+  "deepgemm_research/docs|deepepv2|html/index.html|🔬|DeepGEMM & DeepEP Survey by AI (审核中)|49 篇深度分析报告（架构4篇 + 博客↔DeepGEMM 10篇 + 三向对比9篇 + DeepEP独立分析11篇 + 测试分析7篇 + 对称内存4篇 + V2弹性架构4篇）· 博客理论 ⇌ DeepEP源码 ⇌ DeepGEMM源码 · 核心发现：同步范式 Barrier→mbarrier FIFO / 通信模型 消息传递→Load-Store 对称内存直传|chip|p0"
 )
 # ==============================================================================
 
